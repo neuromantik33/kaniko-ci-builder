@@ -1,5 +1,5 @@
 FROM gcr.io/kaniko-project/executor:debug
 
-ADD entrypoint.sh /entrypoint.sh
+ADD executor.sh /executor
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["ash"]
