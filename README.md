@@ -9,5 +9,5 @@ build:
   image:
     name: neuromantik33/kaniko-ci-builder:latest
   script:
-    - /executor.sh -c $CI_PROJECT_DIR -f $CI_PROJECT_DIR/Dockerfile -d $DOCKER_IMAGE:$DOCKER_IMAGE_TAG
+    - /executor -c $CI_PROJECT_DIR -f $CI_PROJECT_DIR/Dockerfile -d $DOCKER_IMAGE:$DOCKER_IMAGE_TAG
 ```
